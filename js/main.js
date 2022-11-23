@@ -14,7 +14,8 @@ function navbarFun() {
   }
 }
 
-const scrollBtn = document.querySelector(".scrollBtn");
+const scrollBtn = document.querySelector(".scrollBtn"),
+  header = document.getElementById("header");
 
 function scrollTopFun() {
   document.body.scrollTop = 0;
@@ -25,8 +26,10 @@ function showScrollBtn() {
   const scrollTop = window.scrollY;
   if (scrollTop > 100) {
     scrollBtn.classList.add("show_btn");
+    header.classList.add("boxShadow");
   } else {
     scrollBtn.classList.remove("show_btn");
+    header.classList.remove("boxShadow");
   }
 }
 

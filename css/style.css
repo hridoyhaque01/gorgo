@@ -54,6 +54,17 @@ h1 {
 /* header start  */
 header {
   padding: 25px 0;
+  transition: 0.4s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1111;
+}
+
+header.boxShadow {
+  box-shadow: 0 2px 3px 2px rgba(44, 36, 160, 0.2);
 }
 
 header .flex {
@@ -113,7 +124,7 @@ header .flex {
 /* banner start  */
 
 .banner {
-  padding: 120px 0;
+  padding: 140px 0 60px;
 }
 
 .banner .flex {
@@ -131,9 +142,6 @@ header .flex {
   margin-top: 30px;
 }
 
-.banner_img img {
-  width: 100%;
-}
 /* banner end  */
 
 /* demo start  */
@@ -252,6 +260,7 @@ footer {
   border-radius: 50%;
   border: 0;
   outline: 0;
+  cursor: pointer;
   background-color: #ff6162;
   transform: scale(0);
   transform-origin: right bottom;
@@ -286,13 +295,17 @@ footer {
   /* banner */
 
   .banner {
-    padding: 120px 0 60px;
+    padding: 140px 0 60px;
   }
 
   .banner .flex {
     flex-direction: column;
     text-align: center;
     row-gap: 40px;
+  }
+
+  .banner_img img {
+    width: 100%;
   }
 
   /* banner */
@@ -342,6 +355,11 @@ footer {
   }
 
   /* common  */
+  /* banner  */
+  /* .banner {
+    padding: 100px 0;
+  } */
+
   /* banner  */
 
   .banner_text h1,
@@ -448,9 +466,6 @@ footer {
   /* navbar  */
   /* banner  */
 
-  .banner {
-    padding: 60px 0;
-  }
   /* banner  footer*/
 
   .banner_text h1,
