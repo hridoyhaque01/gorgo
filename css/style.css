@@ -438,8 +438,8 @@ footer {
 
   .navbar {
     position: fixed;
-    top: 95px;
-    right: 45px;
+    top: 68px;
+    right: 40px;
     transform: scale(0);
     transition: transform 0.3s ease-out;
     transform-origin: right top;
